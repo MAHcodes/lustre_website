@@ -1,6 +1,6 @@
+import lustre/attribute.{class}
 import lustre/element.{type Element, text}
 import lustre/element/html.{div, h3}
-import lustre/attribute.{class}
 
 pub fn section(
   id: String,

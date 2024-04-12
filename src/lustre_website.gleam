@@ -1,19 +1,19 @@
+import components/announcement_bar.{announcement_bar}
+import components/footer.{footer}
+import components/header.{header}
 import gleam/dynamic
 import gleam/option.{type Option, None, Some}
+import gleam/string
 import lustre
+import lustre/attribute.{class}
 import lustre/effect.{type Effect}
 import lustre/element/html.{div}
-import lustre/attribute.{class}
-import components/announcement_bar.{announcement_bar}
-import components/header.{header}
-import sections/hero.{hero}
-import sections/features.{features}
-import sections/support.{support}
-import sections/lab.{lab}
-import sections/contributors.{type User, User, contributors}
 import lustre_http.{type HttpError}
-import gleam/string
-import components/footer.{footer}
+import sections/contributors.{type User, User, contributors}
+import sections/features.{features}
+import sections/hero.{hero}
+import sections/lab.{lab}
+import sections/support.{support}
 
 pub fn main() {
   let app = lustre.application(init, update, view)

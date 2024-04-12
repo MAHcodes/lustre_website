@@ -1,9 +1,9 @@
+import components/logo.{logo}
+import components/nav.{nav}
+import components/socials.{socials}
+import lustre/attribute.{class, href, id}
 import lustre/element.{type Element}
 import lustre/element/html.{a, div}
-import lustre/attribute.{class, href, id}
-import components/nav.{nav}
-import components/logo.{logo}
-import components/socials.{socials}
 
 pub fn header() -> Element(a) {
   html.header([id("header"), class("transparent")], [

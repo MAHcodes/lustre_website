@@ -72,17 +72,17 @@
   }
   .editor,
   .browser {
-    @apply bg-white rounded-3xl h-screen overflow-hidden;
+    @apply bg-white rounded-3xl h-[70vh] overflow-hidden;
   }
   .editor {
     @apply focus-within:outline outline-vodka outline-2;
   }
   .tooltip {
-    @apply bg-dark-charcoal text-white p-3 rounded-lg absolute -top-8 left-1/2 -translate-y-1/2 scale-50 group-hover:scale-100 group-hover:-translate-y-full -translate-x-1/2 opacity-0 group-hover:opacity-100 duration-300 transition-all flex flex-col w-max items-center pointer-events-none;
+    @apply bg-dark-charcoal z-30 text-white py-2 px-4 rounded-lg absolute -top-8 left-1/2 -translate-y-1/2 scale-50 group-hover:scale-100 group-hover:-translate-y-full -translate-x-1/2 opacity-0 group-hover:opacity-100 duration-300 transition-all flex flex-col w-max items-center pointer-events-none;
   }
   .tooltip::after {
     content: "";
-    @apply absolute z-10 bottom-[1px] left-1/2 -translate-x-1/2 translate-y-full border-transparent border-t-dark-charcoal border-[.75rem];
+    @apply absolute z-30 bottom-[1px] left-1/2 -translate-x-1/2 translate-y-full border-transparent border-t-dark-charcoal border-[.75rem];
   }
 }
 

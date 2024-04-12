@@ -1,7 +1,7 @@
-import lustre/element.{type Element, text}
-import lustre/attribute.{class, href, target}
-import lustre/element/html.{a, li, ul}
 import gleam/list
+import lustre/attribute.{class, href, target}
+import lustre/element.{type Element, text}
+import lustre/element/html.{a, li, ul}
 
 pub type NavItem {
   NavItem(text: String, href: String, target: String)

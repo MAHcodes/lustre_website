@@ -1,8 +1,8 @@
-import lustre/element.{type Element, text}
-import lustre/attribute.{class, href, src, target}
-import lustre/element/html.{a, div, img, p, span}
 import components/section.{section}
 import gleam/int
+import lustre/attribute.{class, href, src, target}
+import lustre/element.{type Element, text}
+import lustre/element/html.{a, div, img, p, span}
 
 pub fn support(stargazers_count: Int) -> Element(a) {
   section(

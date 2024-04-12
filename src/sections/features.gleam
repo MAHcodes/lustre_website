@@ -1,8 +1,8 @@
-import lustre/element.{type Element, text}
-import lustre/attribute.{class, src}
-import lustre/element/html.{h3, img, li, p, ul}
 import components/section.{section}
 import gleam/list
+import lustre/attribute.{class, src}
+import lustre/element.{type Element, text}
+import lustre/element/html.{h3, img, li, p, ul}
 
 type Feature {
   Feature(icon_src: String, title: String, description: String)

@@ -1,8 +1,8 @@
-import lustre/element.{type Element, text}
-import lustre/attribute.{class, href, target}
-import lustre/element/html.{div, h2, p, section}
 import components/logo.{logo}
 import components/ui/a.{a}
+import lustre/attribute.{class, href, target}
+import lustre/element.{type Element, text}
+import lustre/element/html.{div, h2, p, section}
 
 type Link {
   Link(text: String, href: String, target: String)

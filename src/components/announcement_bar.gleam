@@ -1,6 +1,6 @@
+import lustre/attribute.{class, href, id}
 import lustre/element.{type Element, text}
 import lustre/element/html.{a, div, p}
-import lustre/attribute.{class, href, id}
 
 type Link {
   Link(text: String, url: String)

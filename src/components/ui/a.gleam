@@ -1,7 +1,7 @@
+import gleam/string
+import lustre/attribute.{type Attribute, class}
 import lustre/element.{type Element}
 import lustre/element/html.{div, span}
-import lustre/attribute.{type Attribute, class}
-import gleam/string
 
 pub fn a(
   attrs: List(Attribute(a)),

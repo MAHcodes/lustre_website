@@ -1,10 +1,12 @@
-import lustre/element.{type Element, text}
-import lustre/element/html.{a, div, img, p, ul}
-import lustre/attribute.{alt, class, href, src, target}
+import birl
 import components/logo.{logo}
-import components/socials.{socials}
 import components/nav.{type NavItem, NavItem, nav_item}
+import components/socials.{socials}
+import gleam/int
 import gleam/list
+import lustre/attribute.{alt, class, href, src, target}
+import lustre/element.{type Element, text}
+import lustre/element/html.{a, div, img, p, span, ul}
 
 const content: List(NavItem) = [
   NavItem(text: "Features", href: "#features", target: "_self"),
@@ -46,7 +48,11 @@ pub fn footer() -> Element(a) {
           ),
         ],
         [
-          p([class("text-sm")], [text("Lustre © 2024 All rights reserved")]),
+          p([class("text-sm")], [
+            span([], [text("Lustre © ")]),
+            span([], [text(int.to_string(birl.get_day(birl.now()).year))]),
+            span([], [text(" All rights reserved")]),
+          ]),
           p([class("text-sm flex items-center gap-1")], [
             text("Built with"),
             img([class("size-4"), src("/heart.svg"), alt("love")]),
@@ -57,7 +63,18 @@ pub fn footer() -> Element(a) {
                 href("https://github.com/hayleigh-dot-dev"),
                 target("_blank"),
               ],
-              [text("@Hayleigh")],
+              [text("Hayleigh Thompson")],
+            ),
+            text("and"),
+            a(
+              [
+                class("text-dark-charcoal underline"),
+                href(
+                  "https://github.com/lustre-labs/lustre/graphs/contributors",
+                ),
+                target("_blank"),
+              ],
+              [text("contributors")],
             ),
           ]),
         ],

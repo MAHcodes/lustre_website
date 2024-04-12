@@ -1,7 +1,7 @@
-import lustre/element.{type Element}
-import lustre/attribute.{class, href, src, target}
-import lustre/element/html.{a, img, li, ul}
 import gleam/list
+import lustre/attribute.{class, href, src, target}
+import lustre/element.{type Element}
+import lustre/element/html.{a, img, li, ul}
 
 type Social {
   Social(src: String, href: String)

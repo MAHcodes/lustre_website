@@ -1,7 +1,7 @@
+import gleam/string
+import lustre/attribute.{class, src}
 import lustre/element.{type Element}
 import lustre/element/html.{div, img}
-import lustre/attribute.{class, src}
-import gleam/string
 
 pub fn logo(
   container_class container_class: String,

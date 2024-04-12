@@ -1,7 +1,7 @@
-import lustre/element.{type Element, text}
-import lustre/attribute.{class}
-import lustre/element/html.{div, textarea}
 import components/section.{section}
+import lustre/attribute.{class}
+import lustre/element.{type Element, text}
+import lustre/element/html.{div, textarea}
 
 pub fn lab() -> Element(a) {
   section(

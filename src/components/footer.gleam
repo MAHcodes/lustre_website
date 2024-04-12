@@ -48,11 +48,6 @@ pub fn footer() -> Element(a) {
           ),
         ],
         [
-          p([class("text-sm")], [
-            span([], [text("Lustre © ")]),
-            span([], [text(int.to_string(birl.get_day(birl.now()).year))]),
-            span([], [text(" All rights reserved")]),
-          ]),
           p([class("text-sm flex items-center gap-1")], [
             text("Built with"),
             img([class("size-4"), src("/heart.svg"), alt("love")]),
@@ -76,6 +71,11 @@ pub fn footer() -> Element(a) {
               ],
               [text("contributors")],
             ),
+          ]),
+          p([class("text-sm")], [
+            span([], [text("Lustre © ")]),
+            span([], [text(int.to_string(birl.get_day(birl.now()).year))]),
+            span([], [text(" All rights reserved")]),
           ]),
         ],
       ),
